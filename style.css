@@ -1,0 +1,52 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+body { background: #f4f4f4; color: #333; }
+
+header {
+    background: #1a1a1a; color: white;
+    padding: 15px 20px; display: flex;
+    justify-content: space-between; align-items: center;
+}
+.logo { font-size: 24px; font-weight: bold; }
+.logo span { color: #ff4757; }
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 15px; }
+nav a { color: white; text-decoration: none; font-size: 14px; }
+
+.hero {
+    height: 300px; background: #2f3542; color: white;
+    display: flex; align-items: flex-end; padding: 20px;
+    margin-bottom: 20px;
+}
+.tag { background: #ff4757; padding: 3px 8px; font-size: 12px; border-radius: 3px; }
+.hero h1 { margin: 10px 0; font-size: 22px; }
+
+.news-grid { padding: 20px; display: grid; grid-template-columns: 1fr; gap: 20px; }
+.card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.card-img { height: 150px; width: 100%; }
+.card h3 { padding: 15px 15px 5px; font-size: 18px; }
+.card p { padding: 0 15px 15px; font-size: 14px; color: #666; }
+
+footer { text-align: center; padding: 20px; background: #ddd; font-size: 12px; }
+/* --- Search Box Styling --- */
+.search-box {
+    display: flex;
+    margin: 10px 20px; /* Adds space on the sides */
+}
+
+.search-box input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px; /* Rounds only the left corners */
+    flex: 1; /* Makes the input take up available space */
+    outline: none;
+}
+
+.search-box button {
+    padding: 8px 15px;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0; /* Rounds only the right corners */
+    font-weight: bold;
+    cursor: pointer;
+}
